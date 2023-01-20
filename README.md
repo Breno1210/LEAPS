@@ -1,8 +1,11 @@
-# Projeto LEAPS
+<h1 align="center">
+    Projeto LEAPS
+</h1>
 <h1 align="center">
     <img alt="Logo" src="src/images/LEAPS.png" />
     <br>
 </h1>
+
 # LEAPS
 
 Foi projetado e implementado um sistema para o gerenciamento de testes psicológicos, fornecidos pelos professores e alunos de psicologia. Esse sistema foi feito com o intuito de ser capaz de atender necessidades gerenciais da biblioteca de testes da psicologia da PUC e dos alunos e professores que desejam fazer reservas ou consultas sobre os testes disponíveis para empréstimo.
