@@ -61,6 +61,13 @@ Esse projeto consiste da construção de um software responsável por realizar o
 
    Desse modo, voce poderá se dirigir ao seu navegador de preferencia e digitar a url `http://localhost:3000` que a aplicação se encontrará nesse endereço.
 
+<h1 align="center">
+    Primeiro Escopo da UI
+</h1>
+<h1 align="center">
+    <img alt="Logo" src="src/images/escopo.png" />
+</h1>
+
 ## ✒️ Authors
 
 - [@Breno1210](https://github.com/Breno1210)
