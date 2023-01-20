@@ -6,11 +6,12 @@ import LandingPage from "./Pages/LandingPage";
 import Login from "./Pages/LoginPage";
 import Register from "./Pages/RegisterPage";
 import Description from "./Pages/DescriptionPage";
+import Contact from "./Pages/ContactPage";
 import AllTests from "./Pages/AllTests";
 /* 
 
 import NotFound from "./Pages/NotFoundPage";
-import Contact from "./Pages/ContactPage";
+
 import AboutPage from "./Pages/AboutPage";
 import AllTests from "./Pages/AllTests";
 import Thanks from "./Pages/Thanks";
@@ -38,10 +39,11 @@ export default function App() {
           <Route path="/" element={<LandingPage />}></Route>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/tests" element={<AllTests />}></Route>
           <Route path="/description" element={<Description />}></Route>
-          {/* 
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/tests" element={<AllTests />}></Route>
+          {/* 
+          
           <Route path="/notfound" element={<NotFound />}></Route>
           <Route path="/tests" element={<AllTests />}></Route>
           <Route path="/about" element={<AboutPage />}></Route>

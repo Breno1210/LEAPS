@@ -1,6 +1,6 @@
 //IMPORT REACT
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 //IMPORT IMAGENS E ICONES
 import logo from "../svg/logo-LEAPS.svg";
@@ -35,6 +35,14 @@ const Header = () => {
     document.location.reload(true);
   };
 
+  const routePath = useLocation();
+  const onTop = () => {
+    window.scrollTo(0, 0);
+  }
+  useEffect(() => {
+    onTop()
+  }, [routePath]); 
+
   const loginIcon = () => {
     if (user) {
       return (
@@ -58,7 +66,7 @@ const Header = () => {
     } else {
       return (
         <>
-          <Link to="/login" className="btn">
+          <Link to="/login" className="btn" onClick={onTop}>
             Login
           </Link>
         </>
@@ -98,7 +106,7 @@ const Header = () => {
             <li>
               <Link
                 to="/tests"
-                className="p-1"
+                className="p-1" onClick={onTop}
                 data-aos="fade-down"
                 data-aos-delay="200"
               >
@@ -108,7 +116,7 @@ const Header = () => {
             <li>
               <Link
                 to="/about"
-                className="p-1"
+                className="p-1" onClick={onTop}
                 data-aos="fade-down"
                 data-aos-delay="600"
               >
@@ -118,7 +126,7 @@ const Header = () => {
             <li>
               <Link
                 to="/contact"
-                className="p-1"
+                className="p-1" onClick={onTop}
                 data-aos="fade-down"
                 data-aos-delay="800"
               >
@@ -138,7 +146,7 @@ const Header = () => {
           <div className="cta-desktop ml-3 d-table">{loginIcon()}</div>
 
           <div className="cta-mobile">
-            <Link to="/login" className="link color-primary">
+            <Link to="/login" className="link color-primary" onClick={onTop}>
               Login
             </Link>
           </div>
@@ -149,17 +157,17 @@ const Header = () => {
         <div className="menu-mobile">
           <ul className="nav-mobile">
             <li>
-              <Link to="/tests" className="link-menu-mobile">
+              <Link to="/tests" className="link-menu-mobile" onClick={onTop}>
                 Testes
               </Link>
             </li>
             <li>
-              <Link to="/about" className="link-menu-mobile">
+              <Link to="/about" className="link-menu-mobile" onClick={onTop}>
                 Sobre
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="link-menu-mobile">
+              <Link to="/contact" className="link-menu-mobile" onClick={onTop}>
                 Contato
               </Link>
             </li>
