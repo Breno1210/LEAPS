@@ -10,10 +10,8 @@ import Contact from "./Pages/ContactPage";
 import AllTests from "./Pages/AllTests";
 import NotFound from "./Pages/NotFoundPage";
 import AboutPage from "./Pages/AboutPage";
-/* 
-
 import Thanks from "./Pages/Thanks";
- */
+
 //Admin
 /* import Admin from "./Pages/Admin/AdminPage";
 import UsersAdmin from "./Pages/Admin/UsersAdminPage";
@@ -42,9 +40,7 @@ export default function App() {
           <Route path="/notfound" element={<NotFound />}></Route>
           <Route path="/tests" element={<AllTests />}></Route>
           <Route path="/about" element={<AboutPage />}></Route>
-          {/* 
-          
-          <Route path="/thanks" element={<Thanks />}></Route> */}
+          <Route path="/thanks" element={<Thanks />}></Route>
         </Routes>
       </BrowserRouter>
       <ToastContainer />
