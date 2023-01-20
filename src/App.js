@@ -3,10 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Pages
 import LandingPage from "./Pages/LandingPage";
-
-import AllTests from "./Pages/AllTests";
-/* import Login from "./Pages/LoginPage";
+import Login from "./Pages/LoginPage";
 import Register from "./Pages/RegisterPage";
+import AllTests from "./Pages/AllTests";
+/* 
 import Description from "./Pages/DescriptionPage";
 import NotFound from "./Pages/NotFoundPage";
 import Contact from "./Pages/ContactPage";
@@ -35,9 +35,11 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
-          <Route path="/tests" element={<AllTests />}></Route>
-          {/* <Route path="/register" element={<Register />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/tests" element={<AllTests />}></Route>
+          {/* 
+          
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/notfound" element={<NotFound />}></Route>
           <Route path="/description/:id" element={<Description />}></Route>
