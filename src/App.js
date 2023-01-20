@@ -5,9 +5,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage";
 import Login from "./Pages/LoginPage";
 import Register from "./Pages/RegisterPage";
+import Description from "./Pages/DescriptionPage";
 import AllTests from "./Pages/AllTests";
 /* 
-import Description from "./Pages/DescriptionPage";
+
 import NotFound from "./Pages/NotFoundPage";
 import Contact from "./Pages/ContactPage";
 import AboutPage from "./Pages/AboutPage";
@@ -38,11 +39,10 @@ export default function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/tests" element={<AllTests />}></Route>
+          <Route path="/description" element={<Description />}></Route>
           {/* 
-          
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/notfound" element={<NotFound />}></Route>
-          <Route path="/description/:id" element={<Description />}></Route>
           <Route path="/tests" element={<AllTests />}></Route>
           <Route path="/about" element={<AboutPage />}></Route>
           <Route path="/thanks" element={<Thanks />}></Route> */}
