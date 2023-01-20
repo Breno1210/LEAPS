@@ -45,10 +45,14 @@ Esse projeto consiste da construção de um software responsável por realizar o
 
 3. Instalar os pacotes
 
-   Assim que a instalação do node terminar, iremos iniciar a instalação dos pacotes necessários para rodar a aplicação. Abra o seu terminal na pasta `Codigo\frontend` e execute o seguinte comando para iniciar o download dos pacotes:
+   Assim que a instalação do node terminar, iremos iniciar a instalação dos pacotes necessários para rodar a aplicação. Abra o seu terminal na pasta `LEAPS` e execute o seguinte comando para iniciar o download dos pacotes:
 
    ```powershell
-   yarn install
+   #Entrar na pasta LEAPS
+   $ cd LEAPS
+
+   #Instalar os pacotes
+   $ yarn install
    ```
 
 4. Rodando a aplicação
@@ -56,7 +60,7 @@ Esse projeto consiste da construção de um software responsável por realizar o
    Se todas as etapas foram concluídas com sucesso, você poderá executar o seguinte comando para iniciar a aplicação:
 
    ```powershell
-   yarn start
+   $ yarn start
    ```
 
    Desse modo, voce poderá se dirigir ao seu navegador de preferencia e digitar a url `http://localhost:3000` que a aplicação se encontrará nesse endereço.
