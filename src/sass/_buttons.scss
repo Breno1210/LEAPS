@@ -1,0 +1,144 @@
+.btn {
+  display: inline-block;
+
+  color: $white-light;
+
+  cursor: pointer;
+
+  padding: 8px 24px;
+
+  background: linear-gradient(215.69deg, #94c6c5 8.47%, #114183 82.09%);
+
+  border-radius: 4px;
+  border: 0;
+  transition: 0.3s ease;
+
+  @include typeface-2(p3, desktop);
+
+  @include responsive(s) {
+    @include typeface-2(p3, mobile);
+    padding: 12px 24px;
+  }
+
+  @include responsive(xs) {
+    @include typeface-2(p3, smallmobile);
+    padding: 16px 24px;
+  }
+
+  position: relative;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.link-title {
+  text-decoration: none;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link {
+  color: $primary-normal;
+}
+
+.link-footer {
+  padding: 8px 8px 8px 8px;
+
+  transition: 0.7s ease;
+
+  &:hover {
+    padding: 8px 8px 8px 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  @include typeface-2(p3, desktop);
+
+  color: $white-light;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+input {
+  accent-color: $primary-normal;
+}
+
+input,
+select,
+option,
+textarea {
+  padding: 8px 12px;
+  background-color: $black-light;
+
+  border: 0;
+  border-radius: 4px;
+  width: 100%;
+
+  color: $white-light;
+  @include typeface-2(p3, desktop);
+}
+
+select,
+option {
+  height: 48px;
+}
+
+input[type="date"],
+select,
+option {
+  height: 44px;
+}
+
+.btn-search {
+  cursor: pointer;
+  height: 48px;
+  width: 56px;
+
+  background-image: url("svg/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  transform: translate3d(-6px, 0, 0);
+
+  background-color: $black-light;
+  border: 0;
+  border-radius: 4px;
+}
+
+.input-user-login,
+.input-password-login,
+.input-email-login {
+  padding-left: 40px;
+}
+
+.link-instagram {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.mt-1.--has-error {
+  border: 1px solid red;
+  outline: none;
+}

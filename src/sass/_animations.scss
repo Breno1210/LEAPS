@@ -1,0 +1,329 @@
+// Background home
+.glass,
+.fignu5 {
+    //filter: blur(1px);
+    backdrop-filter: blur(5px);
+}
+
+.bg-home-blur2 {
+    transform: translate3d(0, -150px, 0);
+}
+
+.bg-home-blur1 {
+    transform: translate3d(0, -100px, 0);
+}
+
+.bg-home-rect1 {
+    animation: bg-home-rect 3s ease 0s infinite alternate;
+}
+
+.bg-home-rect2 {
+    animation: bg-home-rect 3s ease 0.5s infinite alternate;
+}
+
+.bg-home-rect3 {
+    animation: bg-home-rect 3s ease 1.5s infinite alternate;
+}
+
+.bg-home-rect4 {
+    animation: bg-home-rect 3s ease 2s infinite alternate;
+}
+
+@keyframes bg-home-rect {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 30px, 0);
+    }
+}
+
+// ANIMATION INVITE
+.fignu5-ball1 {
+    transform: translate3d(-100px, -20px, 0);
+    animation: fignu5-ball1 12s ease 1s infinite alternate;
+}
+
+@keyframes fignu5-ball1 {
+
+    0%,
+    10% {
+        transform: translate3d(-100px, -20px, 0);
+    }
+
+    90%,
+    100% {
+        transform: translate3d(0, 0, 0);
+        filter: blur(3px);
+    }
+}
+
+.fignu5-ball2 {
+    transform: translate3d(-100px, 150px, 0);
+    animation: fignu5-ball2 12s ease 0.5s infinite alternate;
+}
+
+@keyframes fignu5-ball2 {
+
+    0%,
+    10% {
+        transform: translate3d(-100px, 150px, 0);
+        filter: blur(6px);
+    }
+
+    90%,
+    100% {
+        transform: translate3d(-50px, 50px, 0);
+    }
+}
+
+.fignu5-ball3 {
+    transform: translate3d(-200px, 100px, 0);
+    animation: fignu5-ball3 12s ease 1.3s infinite alternate;
+}
+
+@keyframes fignu5-ball3 {
+
+    0%,
+    10% {
+        transform: translate3d(-200px, 100px, 0);
+        filter: blur(4px);
+    }
+
+    90%,
+    100% {
+        transform: translate3d(0px, -50px, 0);
+    }
+}
+
+.fignu5-ball4 {
+    transform: translate3d(0px, 0px, 0);
+    animation: fignu5-ball4 12s ease 2s infinite alternate;
+}
+
+@keyframes fignu5-ball4 {
+
+    0%,
+    10% {
+        transform: translate3d(0px, 0px, 0);
+    }
+
+    90%,
+    100% {
+        transform: translate3d(100px, 100px, 0);
+        filter: blur(4px);
+    }
+}
+
+.pulse {
+    width: 12px;
+    height: 12px;
+
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    border-radius: 50%;
+
+    background-color: $white-light;
+
+    animation: pulse 5s linear 3s infinite,
+        pulse-move 10s ease 3s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(250, 250, 250, 0.7);
+    }
+
+    20% {
+        box-shadow: 0 0 0 200px rgba(250, 250, 250, 0);
+    }
+
+    40%,
+    100% {
+        box-shadow: 0 0 0 500px rgba(250, 250, 250, 0);
+    }
+}
+
+@keyframes pulse-move {
+
+    0%,
+    20% {
+        top: 50%;
+        left: 65%;
+    }
+
+    40% {
+        top: 65%;
+        left: 50%;
+    }
+
+    50%,
+    80% {
+        top: 58%;
+        left: 35%;
+    }
+
+    100% {
+        top: 20%;
+        left: 45%;
+    }
+}
+
+//Animation Bg HERO
+
+.moon1{
+    transform: translate3d(0px, 0px, 0);
+    animation: moon1 7s ease-in 0s infinite alternate;
+}
+
+@keyframes moon1 {
+    0%,
+    30% {
+        opacity: 0;
+    }
+
+    60%,
+    100% {
+        opacity: 1;
+    }
+}
+
+.moon2{
+    transform: translate3d(0px, 0px, 0);
+    animation: moon2 7s ease 0s infinite alternate;
+}
+
+@keyframes moon2 {
+    0%,
+    30% {
+        opacity: 1;
+    }
+
+    60%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.moon3{
+    transform: translate3d(0px, 0px, 0);
+    animation: blink 5s ease-in 0s infinite alternate;
+}
+
+.star1{
+    animation: blink 3s ease 0s infinite alternate;
+}
+
+.star2{
+    animation: blink 3s ease-in 2s infinite alternate;
+}
+
+.star3{
+    animation: blink 3s ease-in 3s infinite alternate;
+}
+
+.star4{
+    animation: blink 3s ease 4s infinite alternate;
+}
+
+
+.star5{
+    animation: blink 3s ease 5s infinite alternate;
+}
+
+.star6{
+    animation: blink 3s ease 6s infinite alternate;
+}
+
+.star7{
+    transform: translate3d(0px, -80px, 0);
+    animation: blink 3s ease 7s infinite alternate;
+}
+
+.star8{
+    animation: blink 3s ease 8s infinite alternate;
+}
+
+.star9{
+    animation: blink 3s ease 9s infinite alternate;
+}
+
+.star10{
+    animation: blink 3s ease 10s infinite alternate;
+}
+
+.star11{
+    animation: blink 3s ease 11s infinite alternate;
+}
+
+@keyframes blink {
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    90%,
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.comet1{
+    transform: translate3d(-500px, 0px, 0);
+    animation: comet1 5s ease 1.5s infinite;
+}
+
+
+@keyframes comet1 {
+    0%,
+    10% {
+        transform: translate3d(-3000px, 0px, 0);
+    }
+
+    90%,
+    100% {
+        transform: translate3d(3000px, 0px, 0);
+    }
+}
+
+.comet2{
+    animation: comet2 5s ease 0s infinite;
+}
+
+
+@keyframes comet2 {
+    0%,
+    10% {
+        transform: translate3d(0px, 2000px, 0);
+    }
+
+    90%,
+    100% {
+        transform: translate3d(0px, -2000px, 0);
+    }
+} 
+
+@keyframes flip{
+    
+    0% {
+        transform: rotateX(-10deg) rotateY(10deg) rotate(-15deg);
+    }
+
+    40% {
+        transform: rotateX(0deg) rotateY(20deg);
+    }
+
+    60% {
+        transform: rotateX(20deg) rotateY(20deg);
+    }
+
+    100% {
+        transform: rotateX(10deg) rotateY(10deg) rotate(15deg);
+    }
+}
+

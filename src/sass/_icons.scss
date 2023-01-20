@@ -1,0 +1,196 @@
+.img-hero {
+  min-width: 650px;
+  //max-width: 700px;
+
+  min-height: 350px;
+  max-height: 600px;
+
+  margin-top: -40px;
+
+  @include responsive(s) {
+    min-width: 450px;
+    min-height: 300px;
+    margin-top: 50px;
+    margin-bottom: -70px;
+  }
+
+  @include responsive(m) {
+    min-width: 450px;
+    //max-width: 600px;
+
+    min-height: 300px;
+    max-height: 600px;
+  }
+
+  @include responsive(l) {
+    min-width: 450px;
+    max-width: 600px;
+
+    min-height: 300px;
+    max-height: 600px;
+  }
+
+  &:hover{
+    animation-play-state: paused;
+  }
+
+
+  animation: flip 12s linear infinite alternate,
+            change-bg-brain 12s linear 0s infinite alternate;
+
+
+}
+
+.icon {
+  max-width: 64px;
+  transition: 0.5s ease;
+
+  @include responsive(s) {
+    max-width: 56px;
+  }
+
+  &:hover {
+    transform: translate(0, -4px, 0);
+  }
+}
+
+.icon-ss {
+  max-width: 28px;
+  transition: 0.5s ease;
+  margin-left: 5px;
+  cursor: pointer;
+
+  @include responsive(s) {
+    max-width: 32px;
+  }
+
+  &:hover {
+    transform: translate(0, -4px, 0);
+  }
+}
+
+.icon-s {
+  max-width: 36px;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  @include responsive(s) {
+    max-width: 32px;
+  }
+
+  &:hover {
+    transform: translate(0, -4px, 0);
+  }
+}
+
+.icon-l {
+  max-width: 120px;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  @include responsive(s) {
+    max-width: 96px;
+  }
+}
+
+.icon-xl {
+  max-width: 172px;
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  @include responsive(s) {
+    max-width: 144px;
+  }
+}
+
+.icon-user {
+  cursor: pointer;
+  position: absolute;
+  top: 11%;
+  left: 2%;
+
+  height: 48px;
+  width: 35px;
+
+  transform: translate3d(-6px, 0, 0);
+
+  border: 0;
+  border-radius: 4px;
+}
+
+.icon-passoword {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 2%;
+
+  height: 48px;
+  width: 35px;
+
+  transform: translate3d(-6px, 0, 0);
+
+  border: 0;
+  border-radius: 4px;
+}
+
+.icon-email-register {
+  cursor: pointer;
+  position: absolute;
+  top: 10.7%;
+  left: 4%;
+
+  height: 36px;
+  width: 24px;
+
+  transform: translate3d(-6px, 0, 0);
+
+  border: 0;
+  border-radius: 4px;
+}
+
+.icon-user-register {
+  cursor: pointer;
+  position: absolute;
+  top: 32%;
+  left: 2%;
+
+  height: 48px;
+  width: 38px;
+
+  transform: translate3d(-6px, 0, 0);
+
+  border: 0;
+  border-radius: 4px;
+}
+
+.icon-passoword-register {
+  cursor: pointer;
+  position: absolute;
+  top: 56%;
+  left: 2%;
+
+  height: 48px;
+  width: 35px;
+
+  transform: translate3d(-6px, 0, 0);
+
+  border: 0;
+  border-radius: 4px;
+}
+
+.icon-logado {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.text-Userlogado {
+  display: table-cell;
+  float: right;
+  border-radius: 50%;
+}
+
+.icon-logado {
+    width: 48px;
+    height: 48px;
+}
