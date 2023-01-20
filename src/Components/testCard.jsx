@@ -1,19 +1,24 @@
 //COMPONENT DO CARD DOS TESTES
-const TestCard = ({ content }) => {
+
+//SVG e IMG
+import { Link } from "react-router-dom";
+import imgCard from "../images/img-card-test.jpg"
+
+const TestCard = () => {
   return (
-    <div className="">
+    <div className="card">
       <div className="thumb hidden">
-        <a href={`/description/${content.id}`}>
-          <img src={content.photo} alt="" />
-        </a>
+        <Link to={"/description"}>
+          <img src={imgCard} alt="" />
+        </Link>
       </div>
       <div className="mt-2 px-2">
         <h6 className="uppercase color-gradient bold">
-          {content.what_it_evaluates}
+          Tecnologia
         </h6>
 
-        <h4 className="overflow-breakword">{content.name}</h4>
-        <p className="mt-1">{content.description}</p>
+        <h4 className="overflow-breakword">Lorem Ipsum is simply dummy text of </h4>
+        <p className="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. </p>
         <div className="flex-space my-2">
           <a
             href="https://www.instagram.com/leaps_praca/"
@@ -26,7 +31,7 @@ const TestCard = ({ content }) => {
         </div>
         <div className="my-2">
           <a
-            href={`/description/${content.id}`}
+            href={"'"}
             className="link color-gradient bold"
           >
             Ler mais

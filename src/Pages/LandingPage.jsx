@@ -1,8 +1,8 @@
 //IMPORT REACT
-import React, { useState, useEffect } from "react";
+import React, { /* useState, */ useEffect } from "react";
 import Footer from "../Components/footer";
 import Header from "../Components/header";
-import axios from "axios";
+//import axios from "axios";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -35,31 +35,6 @@ const LandingPage = () => {
       once: true,
     });
   }, []);
-  const [allTests, setAllTests] = useState([]);
-
-  const listTests = async () => {
-    const url = `http://localhost:5000/test/list`;
-
-    let tests = await axios.get(url);
-
-    tests = tests.data.data.slice(0, 3);
-
-    setAllTests(tests);
-  };
-
-  useEffect(() => {
-    listTests();
-  }, []);
-
-  const testsData = (test) => {
-    return (
-      <>
-        <div className="grid-4 card p-0">
-          <TestCard content={test} />
-        </div>
-      </>
-    );
-  };
 
   useEffect(() => {
     const bx = document.querySelector(".bx");
@@ -154,9 +129,15 @@ const LandingPage = () => {
           <h3>Testes</h3>
 
           <div className="row mt-4">
-            {allTests.map((test) => {
-              return testsData(test);
-            })}
+            <div className="grid-4">
+              <TestCard />
+            </div>
+            <div className="grid-4">
+              <TestCard />
+            </div>
+            <div className="grid-4">
+              <TestCard />
+            </div>
           </div>
         </section>
       </div>
