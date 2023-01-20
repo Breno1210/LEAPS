@@ -129,13 +129,13 @@ const LandingPage = () => {
           <h3>Testes</h3>
 
           <div className="row mt-4">
-            <div className="grid-4">
+            <div className="grid-4 p-0">
               <TestCard />
             </div>
-            <div className="grid-4">
+            <div className="grid-4 p-0">
               <TestCard />
             </div>
-            <div className="grid-4">
+            <div className="grid-4 p-0">
               <TestCard />
             </div>
           </div>

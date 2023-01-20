@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Pages
 import LandingPage from "./Pages/LandingPage";
+
+import AllTests from "./Pages/AllTests";
 /* import Login from "./Pages/LoginPage";
 import Register from "./Pages/RegisterPage";
 import Description from "./Pages/DescriptionPage";
@@ -33,6 +35,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
+          <Route path="/tests" element={<AllTests />}></Route>
           {/* <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/contact" element={<Contact />}></Route>
